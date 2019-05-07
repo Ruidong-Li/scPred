@@ -175,7 +175,7 @@ getFeatureSpace <- function(object, pVar, varLim = 0.01, correction = "fdr", sig
     
     warning("\nWarning: No features were found for classes:\n",
             paste0(names(res)[noFeatures], collapse = "\n"), "\n")
-    res[[names(res)[noFeatures]]] <- NULL
+    res[names(res)[noFeatures]] <- NULL
  
   }
   
